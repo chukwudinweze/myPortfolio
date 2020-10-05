@@ -109,17 +109,32 @@ button.about-me {
     background-color: var(--yellow);
     outline: none;
     border: none;
-    padding: 10px 0;
+    padding: 15px 0;
+    width: 200px;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 button.about-me a {
     color: var(--white);
-    padding: 10px 20px;
-    font-family: var(--poppins);
-    font-size: 18px;
+    padding: 15px 20px;
+    font-family: var(--open-sans);
+    font-size: 14px;
+    font-weight: 600;
+    transform: scale(1, 1.5);
     text-transform: uppercase;
+    letter-spacing: 1px;
     border-radius: 25px;
+}
+
+button.about-me a i {
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+button.about-me a:hover i {
+    opacity: 1.0;
+    margin-left: 15px;
 }
 
 nav {
