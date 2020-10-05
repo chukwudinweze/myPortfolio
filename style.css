@@ -139,7 +139,7 @@ button.about-me a:hover i {
 
 nav {
     height: 100%;
-    width: 5%;
+    width: 20%;
     position: fixed;
     top: 0;
     right: 20px;
@@ -159,11 +159,18 @@ nav {
 
 .page-links li {
     margin-bottom: 20px;
-    padding: 10px;
     margin-left: auto;
     border-radius: 50%;
     background-color: var(--gray-dark);
     color: var(--white);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .3s ease;
 }
 
 .page-links li.active {
@@ -175,6 +182,30 @@ nav {
     padding: 5px;
 }
 
-.page-links li.about-icon {
-    padding: 10px 12px;
+.page-links li:hover {
+    background-color: var(--yellow);
+    color: var(--white);
+    width: 150px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.page-links li:hover a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-links li a span {
+    font-family: var(--poppins);
+    font-size: 16px;
+    margin-right: 7px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    display: none;
+    transition: all 1.5s ease-out;
+}
+
+.page-links li:hover a span {
+    display: inline;
 }
