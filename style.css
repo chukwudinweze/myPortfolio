@@ -170,7 +170,7 @@ nav {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: all .3s ease;
+    transition: all .5s ease;
 }
 
 .page-links li.active {
@@ -192,7 +192,6 @@ nav {
 
 .page-links li:hover a {
     display: flex;
-    justify-content: space-between;
 }
 
 .page-links li a span {
@@ -203,7 +202,6 @@ nav {
     display: flex;
     align-items: center;
     display: none;
-    transition: all 1.5s ease-out;
 }
 
 .page-links li:hover a span {
