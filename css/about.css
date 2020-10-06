@@ -7,6 +7,7 @@
     --info: #17a2b8;
     --light: #f8f9fa;
     --light-gray: #aaa9a9;
+    --faint-border: #353434;
     --open-sans: 'Open Sans', sans-serif;
     --poppins: 'Poppins', sans-serif;
 }
@@ -65,7 +66,7 @@ header#about-header .about-header {
 }
 
 .about-developer {
-    width: 60%;
+    width: 50%;
 }
 
 .about-developer h4 {
@@ -119,4 +120,101 @@ aside .download-cv a i {
 aside .download-cv a:hover i {
     opacity: 1.0;
     margin-left: 15px;
+}
+
+.qualities {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.qualities div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.qualities div p {
+    width: 150px;
+    text-align: center;
+    font-family: var(--open-sans);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--light-gray);
+    letter-spacing: 2px;
+    border: 1px solid var(--faint-border);
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-before-skills {
+    margin: 80px auto 55px;
+    border: 1px solid #252525;
+    max-width: 40%;
+}
+
+.skills {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills h4 {
+    font-family: var(--poppins);
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    transform: scale(1, 1.15);
+}
+
+.skills .myskills,
+.skills .skills-learning {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.skills .myskills div,
+.skills .skills-learning div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skills .myskills div.column-1 {
+    margin-bottom: 90px;
+}
+
+.skills .myskills div p,
+.skills .skills-learning div p {
+    width: 142px;
+    height: 142px;
+    font-family: var(--open-sans);
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--light-gray);
+    border: 10px solid var(--yellow);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .skills-learning {
+    margin-top: 30px;
+    /* justify-content: space-around; */
+    border: 1px solid red
+}
+
+.skills .skills-learning div {
+    margin-top: 50px;
 }
