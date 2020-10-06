@@ -145,6 +145,7 @@ nav {
     right: 30px;
     display: flex;
     align-items: center;
+    z-index: 10000;
 }
 
 .page-links {
@@ -177,6 +178,7 @@ nav {
 .page-links li .fa {
     transform: scale(1.5);
     padding: 5px;
+    transition: all .5s ease;
 }
 
 .page-links li:hover {

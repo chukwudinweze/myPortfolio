@@ -6,6 +6,7 @@
     --gray-dark: #343a40;
     --info: #17a2b8;
     --light: #f8f9fa;
+    --light-gray: #aaa9a9;
     --open-sans: 'Open Sans', sans-serif;
     --poppins: 'Poppins', sans-serif;
 }
@@ -24,7 +25,7 @@ html {
 body {
     background-color: rgb(17, 17, 17);
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 header#about-header .about-header {
@@ -37,18 +38,85 @@ header#about-header .about-header {
     text-align: center;
 }
 
-header#about-header .about-header .yellow-text {
+#about-header .about-header .yellow-text {
     color: var(--yellow);
 }
 
-header#about-header .resume-header {
+#about-header .resume-header {
     font-family: var(--poppins);
     font-size: 100px;
     text-transform: uppercase;
     color: var(--gray-dark);
-    letter-spacing: 5px;
-    transform: scale(1.3, 1.2);
+    letter-spacing: 25px;
+    transform: scale(1.3, 1.2) rotate(-25deg) translate(-60px, 120px);
     text-align: center;
     line-height: 75px;
     opacity: 0.4;
+    z-index: 1;
+}
+
+#resume-and-years-experience {
+    width: 100%;
+    padding: 0 100px 0 60px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10000;
+}
+
+.about-developer {
+    width: 60%;
+}
+
+.about-developer h4 {
+    font-family: var(--poppins);
+    color: var(--white);
+    font-size: 35px;
+    transform: scale(1, 1.2);
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.about-developer p {
+    font-family: var(--open-sans);
+    font-size: 18px;
+    color: var(--light-gray);
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+.about-developer h4 .yellow-text {
+    color: var(--yellow);
+}
+
+aside .download-cv {
+    background-color: var(--yellow);
+    outline: none;
+    border: none;
+    padding: 15px 0;
+    width: 200px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+aside .download-cv a {
+    color: var(--white);
+    padding: 15px 20px;
+    font-family: var(--open-sans);
+    font-size: 14px;
+    font-weight: 600;
+    transform: scale(1, 1.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 25px;
+}
+
+aside .download-cv a i {
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+aside .download-cv a:hover i {
+    opacity: 1.0;
+    margin-left: 15px;
 }
