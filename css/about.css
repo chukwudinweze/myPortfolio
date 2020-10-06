@@ -131,7 +131,7 @@ aside .download-cv a:hover i {
 
 .qualities div {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 30px;
 }
 
