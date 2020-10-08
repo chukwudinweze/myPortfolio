@@ -202,7 +202,7 @@ aside .download-cv a:hover i {
     font-size: 18px;
     text-transform: uppercase;
     color: var(--light-gray);
-    border: 10px solid var(--yellow);
+    border: 7px solid var(--yellow);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -211,6 +211,7 @@ aside .download-cv a:hover i {
 
 .skills .skills-learning {
     margin-top: 30px;
+    padding-bottom: 30px;
 }
 
 .skills .skills-learning div {
