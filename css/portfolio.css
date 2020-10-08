@@ -81,6 +81,11 @@ img {
 .gallery-item {
     border: 1px solid var(--faint-border);
     padding: 1px;
+    transition: all .3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1)
 }
 
 .gallery-item img {
