@@ -80,6 +80,7 @@ img {
 
 .gallery-item {
     border: 1px solid var(--faint-border);
+    border-radius: 8px;
     padding: 1px;
     transition: all .3s ease-in-out;
 }

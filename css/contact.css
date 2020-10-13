@@ -1,0 +1,179 @@
+:root {
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --info: #17a2b8;
+    --light: #f8f9fa;
+    --light-gray: #aaa9a9;
+    --faint-border: #353434;
+    --open-sans: 'Open Sans', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+}
+
+#about-header h1 {
+    color: var(--white);
+    font-family: var(--poppins);
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    transform: scale(1.2);
+}
+
+#about-header h1 .yellow-text {
+    color: var(--yellow);
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-start;
+    padding: 70px 100px 50px 50px;
+}
+
+.contact .contact-msg {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 5px;
+}
+
+.contact .contact-msg h4 {
+    color: var(--white);
+    font-family: var(--poppins);
+    font-size: 25px;
+    transform: scale(1, 1.2);
+    margin-bottom: 20px;
+}
+
+.contact .contact-msg p {
+    color: var(--white);
+    font-family: var(--open-sans);
+    font-size: 14px;
+}
+
+.get-in-touch {
+    line-height: 30px;
+}
+
+.email-call-container {
+    padding: 20px 0;
+}
+
+.email {
+    margin-bottom: 20px;
+}
+
+.contact .contact-msg .mail-me,
+.contact .contact-msg .call-me {
+    text-transform: uppercase;
+    color: var(--light-gray);
+}
+
+.contact .contact-msg .contact-me .email a,
+.contact .contact-msg .contact-me .call a {
+    display: flex;
+    align-items: center;
+}
+
+.email .fa-envelope-open,
+.call .fa-phone-square {
+    color: var(--yellow);
+    transform: scale(1);
+    margin-right: 30px;
+    margin-left: 0;
+}
+
+.call .fa-phone-square {
+    transform: scale(1.1);
+}
+
+.email-address,
+.phone-no {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.social-media-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.social-media-link li {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-dark);
+    border-radius: 50%;
+    transition: all .1s ease-in;
+}
+
+.social-media-link li:hover {
+    background-color: var(--yellow);
+}
+
+form {
+    padding-left: 40px;
+}
+
+.name-email-subject {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+input[type] {
+    width: 170px;
+    background-color: var(--gray-dark);
+    color: var(--white);
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    margin-right: 15px;
+    outline: none;
+    border-radius: 20px;
+    padding: 15px 0;
+}
+
+textarea {
+    background-color: var(--gray-dark);
+    justify-self: center;
+    color: var(--white);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 35px;
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+button[type="submit"] {
+    width: 190px;
+    background-color: var(--yellow);
+    color: var(--white);
+    text-align: center;
+    font-family: var(--poppins);
+    font-size: 14px;
+    transform: scale(1, 1.1);
+    letter-spacing: 1px;
+    padding: 12px;
+    border-radius: 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.fa-send-o {
+    margin-left: -10px;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+button[type="submit"]:hover .fa-send-o {
+    opacity: 1;
+    margin-left: 10px
+}
