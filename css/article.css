@@ -1,0 +1,73 @@
+:root {
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --info: #17a2b8;
+    --light: #f8f9fa;
+    --light-gray: #aaa9a9;
+    --faint-border: #353434;
+    --open-sans: 'Open Sans', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+}
+
+#article-header h1 {
+    color: var(--white);
+    font-family: var(--poppins);
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    transform: scale(1.2);
+    margin: 50px 0;
+}
+
+#article-header h1 .yellow-text {
+    color: var(--yellow);
+}
+
+.blog-articles {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.article-container {
+    width: 45%;
+    height: 430px;
+    background-color: var(--gray-dark);
+    border-radius: 5px;
+}
+
+.article-container .img-container {
+    width: 100%;
+    max-height: 230px;
+    overflow: hidden;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: 5px solid var(--yellow);
+}
+
+.article-container .img-container {
+    max-width: 100%;
+}
+
+.article-container .text-content {
+    color: lightgray;
+    padding: 0 15px;
+}
+
+.article-container .text-content h4 {
+    font-family: var(--open-sans);
+    font-size: 20px;
+    margin: 25px 0;
+}
+
+.article-container .text-content p {
+    font-family: var(--open-sans);
+    font-size: 16px;
+}

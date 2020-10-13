@@ -31,12 +31,13 @@ body {
 
 header#about-header .about-header {
     font-family: var(--poppins);
-    font-size: 60px;
+    font-size: 50px;
     text-transform: uppercase;
     color: var(--white);
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     transform: scale(1.2);
     text-align: center;
+    margin: 50px 0;
 }
 
 #about-header .about-header .yellow-text {
@@ -51,7 +52,7 @@ header#about-header .about-header {
     letter-spacing: 25px;
     transform: scale(1.3, 1.2) rotate(-25deg) translate(-60px, 120px);
     text-align: center;
-    line-height: 75px;
+    margin-top: -100px;
     opacity: 0.4;
     z-index: 1;
 }

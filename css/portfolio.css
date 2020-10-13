@@ -55,12 +55,11 @@ img {
 .portfolio-heading {
     color: var(--white);
     font-family: var(--poppins);
-    font-size: 56px;
+    font-size: 50px;
     text-transform: uppercase;
-    letter-spacing: 1px;
     transform: scale(1.2);
     text-align: center;
-    padding-bottom: 20px;
+    margin: 50px 0;
 }
 
 .portfolio-heading .yellow-text {
