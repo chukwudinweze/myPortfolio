@@ -249,11 +249,16 @@ nav {
         margin-bottom: 25px;
     }
     button.about-me {
-        width: 220px
+        width: 180px
     }
     button.about-me a {
         padding: 15px 0;
-        font-size: 16px;
+        font-size: 14px;
         transform: scale(1.2);
+        letter-spacing: o;
+    }
+    button.about-me a:hover i {
+        opacity: 1.0;
+        margin-left: 10px;
     }
 }
