@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://use.fontawesome.com/9ddf62d4df.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/animsition.min.css">
+    <link rel="stylesheet" href="css/scrollCue.css">
+    <link rel="stylesheet" href="css/animsition.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
     <title>About-Chukwudi Nweze personal portfolio</title>
@@ -19,7 +20,7 @@
             <h1 class="resume-header">resume</h1>
         </header>
 
-        <section id="resume-and-years-experience">
+        <section id="resume-and-years-experience" data-cues="zoomIn" data-duration="2000" data-delay="500">
             <article class="about-developer">
                 <h4>about the <span class="yellow-text">developer</span></h4>
                 <p>
@@ -115,7 +116,9 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="dist/js/animsition.min.js"></script>
+    <script src="js/animsition.min.js"></script>
+    <script src="js\scrollCue.min.js"></script>
+
 
     <!-- init animsition -->
     <script>
@@ -145,7 +148,11 @@
                 }
             });
         });
+
+        // init scrollcue
+        scrollCue.init();
     </script>
+
 </body>
 
 </html>
