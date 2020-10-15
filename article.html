@@ -6,56 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://use.fontawesome.com/9ddf62d4df.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/animsition.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/article.css">
     <title>Contact-Chukwudi Nweze personal portfolio</title>
 </head>
 
 <body>
-    <header id="article-header">
-        <h1 class="a-header">MY <span class="yellow-text">ARTICLES</span></h1>
-    </header>
+    <div class="animsition">
+        <header id="article-header">
+            <h1 class="a-header">MY <span class="yellow-text">ARTICLES</span></h1>
+        </header>
 
-    <section class="blog-articles">
-        <article class="article-container">
-            <a href="https://dev.to/chudiweb/what-i-didn-t-know-about-const-variable-declaration-in-javascript-1cph" target="_blank">
-                <div class="img-container">
-                    <img src="images/cont-variable.jpeg" alt="javascript const variable">
-                </div>
-                <div class="text-content">
-                    <h4>What I Din't Know about Const Variable Declaration in Javascript</h4>
-                    <p>
-                        I'm proudly teaching myself coding, on the journey so far, here is what I think I didn't know about...
-                    </p>
-                </div>
-            </a>
-        </article>
-        <article class="article-container">
-            <a href="https://dev.to/chudiweb/what-i-didn-t-know-about-const-variable-declaration-in-javascript-1cph" target="_blank">
-                <div class="img-container">
-                    <img src="images/cont-variable.jpeg" alt="javascript const variable">
-                </div>
-                <div class="text-content">
-                    <h4>What I Din't Know about Const Variable Declaration in Javascript</h4>
-                    <p>
-                        I'm proudly teaching myself coding, on the journey so far, here is what I think I didn't know about...
-                    </p>
-                </div>
-            </a>
-        </article>
-    </section>
+        <section class="blog-articles">
+            <article class="article-container">
+                <a href="https://dev.to/chudiweb/what-i-didn-t-know-about-const-variable-declaration-in-javascript-1cph" target="_blank">
+                    <div class="img-container">
+                        <img src="images/cont-variable.jpeg" alt="javascript const variable">
+                    </div>
+                    <div class="text-content">
+                        <h4>What I Din't Know about Const Variable Declaration in Javascript</h4>
+                        <p>
+                            I'm proudly teaching myself coding, on the journey so far, here is what I think I didn't know about...
+                        </p>
+                    </div>
+                </a>
+            </article>
+            <article class="article-container">
+                <a href="https://dev.to/chudiweb/what-i-didn-t-know-about-const-variable-declaration-in-javascript-1cph" target="_blank">
+                    <div class="img-container">
+                        <img src="images/cont-variable.jpeg" alt="javascript const variable">
+                    </div>
+                    <div class="text-content">
+                        <h4>What I Din't Know about Const Variable Declaration in Javascript</h4>
+                        <p>
+                            I'm proudly teaching myself coding, on the journey so far, here is what I think I didn't know about...
+                        </p>
+                    </div>
+                </a>
+            </article>
+        </section>
 
 
-    <!-- fixed navigaion starts here -->
-    <nav>
-        <ul class="page-links">
-            <li class="homepage-icon"><a href="index.html"><span>home</span><i class="fa fa-home"></i></a></li>
-            <li class="about-icon active"><a href="about.html"><span>about</span><i class="fa fa-user"></i></a></li>
-            <li class="portfolio-icon"><a href="portfolio.html"><span>portfolio</span><i class="fa fa-briefcase"></i></a></li>
-            <li class="contact-icon"><a href="contact.html"><span>contact</span><i class="fa fa-envelope"></i></a></li>
-            <li class="blog-icon"><a href="article.html" target="_blank"><span>Article</span><i class="fa fa-comments"></i></a></li>
-        </ul>
-    </nav>
+        <!-- fixed navigaion starts here -->
+        <nav>
+            <ul class="page-links">
+                <li class="homepage-icon"><a class="animsition-link" href="index.html"><span>home</span><i class="fa fa-home"></i></a></li>
+                <li class="about-icon"><a class="animsition-link" href="about.html"><span>about</span><i class="fa fa-user"></i></a></li>
+                <li class="portfolio-icon"><a class="animsition-link" href="portfolio.html"><span>portfolio</span><i class="fa fa-briefcase"></i></a></li>
+                <li class="contact-icon"><a class="animsition-link" href="contact.html"><span>contact</span><i class="fa fa-envelope"></i></a></li>
+                <li class="blog-icon active"><a class="animsition-link" href="article.html"><span>Article</span><i class="fa fa-comments"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- jquery api -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="dist/js/animsition.min.js"></script>
+
+    <!-- init animsition -->
+    <script>
+        $(document).ready(function() {
+            $(".animsition").animsition({
+                inClass: 'fade-in-down',
+                outClass: 'fade-out-down',
+                inDuration: 1500,
+                outDuration: 800,
+                linkElement: '.animsition-link',
+                // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+                loading: true,
+                loadingParentElement: 'body', //animsition wrapper element
+                loadingClass: 'animsition-loading',
+                loadingInner: '', // e.g '<img src="loading.svg" />'
+                timeout: false,
+                timeoutCountdown: 5000,
+                onLoadEvent: true,
+                browser: ['animation-duration', '-webkit-animation-duration'],
+                // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+                // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+                overlay: false,
+                overlayClass: 'animsition-overlay-slide',
+                overlayParentElement: 'body',
+                transition: function(url) {
+                    window.location.href = url;
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

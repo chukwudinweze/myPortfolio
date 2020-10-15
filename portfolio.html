@@ -7,98 +7,101 @@
     <script src="https://use.fontawesome.com/9ddf62d4df.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <link href="https://www.cssscript.com/demo/sticky.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="dist/css/animsition.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+
     <title>Portfolio-Chukwudi Nweze personal portfolio</title>
 </head>
 
 <body>
-    <section class="section gallery">
-        <div class="container">
-            <h1 class="portfolio-heading">my <span class="yellow-text">portfolio</span></h1>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="images/edfreight-img.png" alt="edfreight.netlify.app">
-                    <div class="gallery-item-text" data-url="https://edfreight.netlify.app">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quam suscipit sint aliquam alias expedita ut quidem incidunt vel laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, id neque? Expedita odio nihil
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, mollitia accusantium. Nesciunt quisquam aut sed, soluta molestias provident recusandae, maxime, illum voluptas nemo hic praesentium ipsa id voluptate eligendi
-                        repellendus. Neque laudantium similique esse quo aperiam ex totam deleniti, ab eaque obcaecati blanditiis minus earum sequi. Facere ex itaque delectus, sint, soluta quia iste accusantium accusamus unde repellendus nostrum nihil,
-                        voluptatibus ut eveniet. Cumque esse facilis laboriosam, ipsum laborum eos asperiores quibusdam voluptatem nemo natus cum vitae beatae ratione deleniti veniam dolorum ut exercitationem dicta sequi illo rem adipisci inventore, omnis
-                        porro. Itaque, totam! Ratione labore commodi quae rem saepe.
+    <div class="animsition">
+        <section class="section gallery">
+            <div class="container">
+                <h1 class="portfolio-heading">my <span class="yellow-text">portfolio</span></h1>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/edfreight-img.png" alt="edfreight.netlify.app">
+                        <div class="gallery-item-text" data-url="https://edfreight.netlify.app">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quam suscipit sint aliquam alias expedita ut quidem incidunt vel laudantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, id neque? Expedita odio
+                            nihil Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, mollitia accusantium. Nesciunt quisquam aut sed, soluta molestias provident recusandae, maxime, illum voluptas nemo hic praesentium ipsa id voluptate
+                            eligendi repellendus. Neque laudantium similique esse quo aperiam ex totam deleniti, ab eaque obcaecati blanditiis minus earum sequi. Facere ex itaque delectus, sint, soluta quia iste accusantium accusamus unde repellendus
+                            nostrum nihil, voluptatibus ut eveniet. Cumque esse facilis laboriosam, ipsum laborum eos asperiores quibusdam voluptatem nemo natus cum vitae beatae ratione deleniti veniam dolorum ut exercitationem dicta sequi illo rem adipisci
+                            inventore, omnis porro. Itaque, totam! Ratione labore commodi quae rem saepe.
 
+                        </div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/nutrifood.png" alt="nutrifood.netlify.app">
+                        <div class="gallery-item-text" data-url="https://nutrifood.netlify.app">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quam suscipit sint aliquam alias expedita ut quidem incidunt vel laudantium!</div>
+                    </div>
+
+                    <div class="gallery-item">
+                        <img src="images/chukwudinweze.png" alt="chukwudinweze.netlify.app">
+                        <div class="gallery-item-text" data-url="https://chukwudinweze.netlify.app/">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quam suscipit sint aliquam alias expedita ut quidem incidunt vel laudantium!</div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="gallery-item">
-                    <img src="images/nutrifood.png" alt="nutrifood.netlify.app">
-                    <div class="gallery-item-text" data-url="https://nutrifood.netlify.app">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quam suscipit sint aliquam alias expedita ut quidem incidunt vel laudantium!</div>
+        <!-- Lightbox -->
+        <div class="lightbox preload">
+            <div class="lb-content">
+                <!-- You may put a loader gif or svg here for starters -->
+                <img class="lb-img" src="/img/loader.svg" alt="lightbox image">
+                <div class="lb-caption">
+                    <a class="lb-url" href="noopener" rel="noopener" target="_blank">Link to Site &rarr;</a>
+                    <div class="lb-text"></div>
                 </div>
-
-                <div class="gallery-item">
-                    <img src="images/chukwudinweze.png" alt="chukwudinweze.netlify.app">
-                    <div class="gallery-item-text" data-url="https://chukwudinweze.netlify.app/">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quam suscipit sint aliquam alias expedita ut quidem incidunt vel laudantium!</div>
-                </div>
+                <a href="#" class="close">&times;</a>
             </div>
         </div>
-    </section>
 
-    <!-- Lightbox -->
-    <div class="lightbox preload">
-        <div class="lb-content">
-            <!-- You may put a loader gif or svg here for starters -->
-            <img class="lb-img" src="/img/loader.svg" alt="lightbox image">
-            <div class="lb-caption">
-                <a class="lb-url" href="noopener" rel="noopener" target="_blank">Link to Site &rarr;</a>
-                <div class="lb-text"></div>
-            </div>
-            <a href="#" class="close">&times;</a>
-        </div>
+        <!-- fixed navigaion starts here -->
+        <nav>
+            <ul class="page-links">
+                <li class="homepage-icon"><a class="animsition-link" href="index.html"><span>home</span><i class="fa fa-home"></i></a></li>
+                <li class="about-icon"><a class="animsition-link" href="about.html"><span>about</span><i class="fa fa-user"></i></a></li>
+                <li class="portfolio-icon active"><a class="animsition-link" href="portfolio.html"><span>portfolio</span><i class="fa fa-briefcase"></i></a></li>
+                <li class="contact-icon"><a class="animsition-link" href="contact.html"><span>contact</span><i class="fa fa-envelope"></i></a></li>
+                <li class="blog-icon"><a class="animsition-link" href="article.html"><span>Article</span><i class="fa fa-comments"></i></a></li>
+            </ul>
+        </nav>
     </div>
-    <script src="js/portfolio.js"></script>
+
+    <!-- jquery api -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="dist/js/animsition.min.js"></script>
+
+    <!-- init animsition -->
     <script>
-        try {
-            fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", {
-                method: 'HEAD',
-                mode: 'no-cors'
-            })).then(function(response) {
-                return true;
-            }).catch(function(e) {
-                var carbonScript = document.createElement("script");
-                carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CE7DC2JW&placement=wwwcssscriptcom";
-                carbonScript.id = "_carbonads_js";
-                document.getElementById("carbon-block").appendChild(carbonScript);
+        $(document).ready(function() {
+            $(".animsition").animsition({
+                inClass: 'fade-in-down',
+                outClass: 'fade-out-down',
+                inDuration: 1500,
+                outDuration: 800,
+                linkElement: '.animsition-link',
+                // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+                loading: true,
+                loadingParentElement: 'body', //animsition wrapper element
+                loadingClass: 'animsition-loading',
+                loadingInner: '', // e.g '<img src="loading.svg" />'
+                timeout: false,
+                timeoutCountdown: 5000,
+                onLoadEvent: true,
+                browser: ['animation-duration', '-webkit-animation-duration'],
+                // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+                // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+                overlay: false,
+                overlayClass: 'animsition-overlay-slide',
+                overlayParentElement: 'body',
+                transition: function(url) {
+                    window.location.href = url;
+                }
             });
-        } catch (error) {
-            console.log(error);
-        }
+        });
     </script>
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-46156385-1', 'cssscript.com');
-        ga('send', 'pageview');
-    </script>
-</body>
-
-<!-- fixed navigaion starts here -->
-<nav>
-    <ul class="page-links">
-        <li class="homepage-icon"><a href="index.html"><span>home</span><i class="fa fa-home"></i></a></li>
-        <li class="about-icon"><a href="about.html"><span>about</span><i class="fa fa-user"></i></a></li>
-        <li class="portfolio-icon active"><a href="portfolio.html"><span>portfolio</span><i class="fa fa-briefcase"></i></a></li>
-        <li class="contact-icon"><a href="contact.html"><span>contact</span><i class="fa fa-envelope"></i></a></li>
-        <li class="blog-icon"><a href="article.html"><span>Article</span><i class="fa fa-comments"></i></a></li>
-    </ul>
-</nav>
 </body>
 
 </html>
