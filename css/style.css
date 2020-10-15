@@ -234,13 +234,23 @@ nav {
         padding: 0 20px;
     }
     .short-description h5 {
-        font-size: 18px;
+        font-size: 14px;
         margin: 0 0 20px;
         transform: scale(1, 1.5);
     }
     .short-description h1 {
-        font-size: 25px;
+        font-size: 30px;
         transform: scale(1.3);
         line-height: 60px;
+    }
+    .short-description p {
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 25px;
+    }
+    button.about-me a {
+        font-size: 16px;
+        font-weight: 600;
+        transform: scale(1, 1.5);
     }
 }
