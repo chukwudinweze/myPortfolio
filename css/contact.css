@@ -12,6 +12,10 @@
     --poppins: 'Poppins', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 #about-header h1 {
     color: var(--white);
     font-family: var(--poppins);
