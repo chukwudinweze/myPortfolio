@@ -137,6 +137,10 @@ button.about-me a:hover i {
     margin-left: 15px;
 }
 
+.hamburger {
+    display: none;
+}
+
 .mobile-nav {
     display: none
 }
@@ -217,11 +221,88 @@ nav {
 /* mobile version starts here */
 
 @media only screen and (max-width: 940px) {
+    html {
+        overflow-x: hidden;
+    }
+    .hamburger {
+        display: block;
+        position: fixed;
+        right: 25px;
+        top: 40px;
+        z-index: 12000;
+    }
     .desktop-nav {
         display: none;
     }
     .mobile-nav {
-        display: none;
+        display: flex;
+    }
+    nav {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0px;
+        margin-top: 0px;
+        background-color: var(--gray-dark);
+        transition: all .5s ease-in-out;
+    }
+    nav.is-active {
+        left: -500px;
+    }
+    .page-links {
+        height: 100%;
+        width: 100%;
+        margin-top: 200px;
+        padding: 0 20px;
+        display: flex;
+    }
+    .page-links li {
+        border-bottom: 1px solid var(--gray);
+        margin-bottom: 30px;
+        margin-left: 0;
+        border-radius: 0;
+        width: 100%;
+        height: 50px;
+        justify-content: flex-start;
+    }
+    .page-links li a {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 10px 0px;
+        border-radius: 0px;
+    }
+    .page-links li a span {
+        font-size: 20px;
+        margin-right: 0px;
+        display: inline-block;
+        transform: scale(1, 1.2);
+        letter-spacing: 3px;
+        margin-left: 25px;
+    }
+    .page-links li .fa {
+        transform: scale(1.5);
+        padding: 5px;
+    }
+    .page-links li.active {
+        background-color: var(--gray-dark);
+    }
+    .page-links li.active a {
+        color: var(--yellow);
+    }
+    .page-links li:hover {
+        background-color: var(--gray-dark);
+        color: var(--white);
+        width: 100%;
+        text-align: left;
+        border-radius: 0;
+    }
+    .page-links li:hover a {
+        display: flex;
+        padding: 0px 0px;
+        border-radius: 0px;
     }
     .yellow-border-right {
         display: none;
