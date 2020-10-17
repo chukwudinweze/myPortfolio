@@ -8,11 +8,3 @@ hamburger.addEventListener("click", function() {
 
 
 });
-
-// let nav = document.querySelector(".mobile-nav");
-
-// hamburger.addEventListener("click", function() {
-
-//     hamburger.classList.toggle("is-active");
-
-// });

@@ -57,6 +57,10 @@ header#about-header .about-header {
     z-index: 1;
 }
 
+.mobile-nav-n {
+    display: none
+}
+
 #resume-and-years-experience {
     width: 100%;
     padding: 0 100px 0 60px;

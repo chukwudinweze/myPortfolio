@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://use.fontawesome.com/9ddf62d4df.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/hamburgers.css">
     <link rel="stylesheet" href="css/animsition.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
@@ -84,17 +85,26 @@
             </ul>
         </nav>
 
-        <!-- mobile nav -->
+        <!-- mobile nav hamburger -->
+        <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        <!-- mobile nav-item -->
         <nav class="mobile-nav">
             <ul class="page-links">
-                <li class="homepage-icon active"><a class="animsition-link" href="index.html"><span>home</span><i class="fa fa-home"></i></a></li>
+                <li class="homepage-icon"><a class="animsition-link close-nav" href="index.html"><span>home</span><i class="fa fa-home"></i></a></li>
                 <li class="about-icon"><a class="animsition-link" href="about.html"><span>about</span><i class="fa fa-user"></i></a></li>
                 <li class="portfolio-icon"><a class="animsition-link" href="portfolio.html"><span>portfolio</span><i class="fa fa-briefcase"></i></a></li>
-                <li class="contact-icon"><a class="animsition-link" href="contact.html"><span>contact</span><i class="fa fa-envelope"></i></a></li>
+                <li class="contact-icon active"><a class="animsition-link" href="contact.html"><span>contact</span><i class="fa fa-envelope"></i></a></li>
                 <li class="blog-icon"><a class="animsition-link" href="article.html"><span>Article</span><i class="fa fa-comments"></i></a></li>
             </ul>
         </nav>
     </div>
+
+    <!-- js for mobile sidebar nav -->
+    <script src="js/navigation.js"></script>
 
 
     <!-- jquery api -->
