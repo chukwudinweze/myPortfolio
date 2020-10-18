@@ -154,7 +154,7 @@ aside .download-cv a:hover i {
 }
 
 .line-before-skills {
-    margin: 80px auto 55px;
+    margin: 80px auto 35px;
     border: 1px solid #252525;
     max-width: 40%;
 }
@@ -171,6 +171,7 @@ aside .download-cv a:hover i {
     color: white;
     text-transform: uppercase;
     transform: scale(1, 1.15);
+    margin-bottom: 45px;
 }
 
 .skills .myskills,
@@ -180,7 +181,6 @@ aside .download-cv a:hover i {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 50px;
 }
 
 .skills .myskills div,
@@ -211,12 +211,12 @@ aside .download-cv a:hover i {
 }
 
 .skills .skills-learning {
-    margin-top: 30px;
-    padding-bottom: 30px;
+    margin-top: 70px;
+    padding-bottom: 50px;
 }
 
 .skills .skills-learning div {
-    margin-top: 50px;
+    margin-top: 00px;
 }
 
 
@@ -249,8 +249,8 @@ aside .download-cv a:hover i {
         font-size: 25px;
         transform: scale(1.1, 1);
         text-align: left;
-        margin: 0px 0 0px 30px;
-        padding: 16px 0 10px 20px;
+        margin: 0px 0 0px 0px;
+        padding: 16px 0 10px 35px;
         background-color: var(--gray-dark);
         border-bottom: 1px solid var(--gray);
         position: fixed;
@@ -303,9 +303,9 @@ aside .download-cv a:hover i {
         font-size: 14px;
     }
     .line-before-skills {
-        margin: 40px auto 25px;
+        margin: 40px auto 0px;
         border: 1px solid var(--gray-dark);
-        max-width: 70%;
+        max-width: 40%;
     }
     .skills {
         width: 100%;
@@ -320,7 +320,7 @@ aside .download-cv a:hover i {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 25px;
+        padding-top: 15px;
     }
     .skills .myskills div.column-1 {
         margin-bottom: 45px;
@@ -332,11 +332,15 @@ aside .download-cv a:hover i {
         font-size: 14px;
         border: 5px solid var(--yellow);
     }
+    .skills .myskills {
+        margin-top: 0;
+    }
     .skills .skills-learning {
         margin-top: 25px;
         padding-bottom: 25px;
+        padding-top: 45px;
     }
     .skills .skills-learning div {
-        margin-top: 25px;
+        margin-top: 0px;
     }
 }
