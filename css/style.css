@@ -3,9 +3,10 @@
     --yellow: #ffc107;
     --white: #fff;
     --gray: #6c757d;
-    --gray-dark: #343a40;
+    --gray-dark: #252525;
     --info: #17a2b8;
     --light: #f8f9fa;
+    --faint-border: #353434;
     --open-sans: 'Open Sans', sans-serif;
     --poppins: 'Poppins', sans-serif;
 }
@@ -228,7 +229,7 @@ nav {
         display: block;
         position: fixed;
         right: 25px;
-        top: 40px;
+        top: 30px;
         z-index: 12000;
     }
     .desktop-nav {
@@ -259,13 +260,15 @@ nav {
         display: flex;
     }
     .page-links li {
-        border-bottom: 1px solid var(--gray);
-        margin-bottom: 30px;
+        border-bottom: 1px solid var(--faint-border);
+        margin-bottom: 0;
         margin-left: 0;
         border-radius: 0;
         width: 100%;
-        height: 50px;
+        height: 30px;
         justify-content: flex-start;
+        align-items: center;
+        padding: 28px 0;
     }
     .page-links li a {
         font-family: var(--open-sans);

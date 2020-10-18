@@ -3,7 +3,7 @@
     --yellow: #ffc107;
     --white: #fff;
     --gray: #6c757d;
-    --gray-dark: #343a40;
+    --gray-dark: #252525;
     --info: #17a2b8;
     --light: #f8f9fa;
     --light-gray: #aaa9a9;
@@ -55,10 +55,6 @@ header#about-header .about-header {
     margin-top: -100px;
     opacity: 0.4;
     z-index: 1;
-}
-
-.mobile-nav-n {
-    display: none
 }
 
 #resume-and-years-experience {
@@ -221,4 +217,32 @@ aside .download-cv a:hover i {
 
 .skills .skills-learning div {
     margin-top: 50px;
+}
+
+
+/* mobile version */
+
+@media only screen and (max-width: 940px) {
+    html {
+        overflow-x: hidden;
+    }
+    .hamburger {
+        display: block;
+        position: fixed;
+        right: 15px;
+        top: 10px;
+        z-index: 12000;
+    }
+    .hamburger {
+        background-color: transparent !important;
+    }
+    header#about-header .about-header {
+        font-size: 25px;
+        transform: scale(1);
+        text-align: left;
+        margin: 0px 0 0px 0px;
+        padding: 10px 0 10px 20px;
+        background-color: var(--gray-dark);
+        border-bottom: 1px solid var(--gray);
+    }
 }
