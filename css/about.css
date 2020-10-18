@@ -163,6 +163,7 @@ aside .download-cv a:hover i {
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    border: 1px solid red;
 }
 
 .skills h4 {
@@ -171,7 +172,6 @@ aside .download-cv a:hover i {
     color: white;
     text-transform: uppercase;
     transform: scale(1, 1.15);
-    margin-bottom: 45px;
 }
 
 .skills .myskills,
@@ -181,6 +181,7 @@ aside .download-cv a:hover i {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: 1px solid red
 }
 
 .skills .myskills div,
@@ -211,12 +212,12 @@ aside .download-cv a:hover i {
 }
 
 .skills .skills-learning {
-    margin-top: 70px;
-    padding-bottom: 50px;
+    margin-top: 30px;
+    padding-bottom: 30px;
 }
 
 .skills .skills-learning div {
-    margin-top: 00px;
+    margin-top: 50px;
 }
 
 
@@ -304,9 +305,9 @@ aside .download-cv a:hover i {
         font-size: 14px;
     }
     .line-before-skills {
-        margin: 40px auto 0px;
+        margin: 40px auto 25px;
         border: 1px solid var(--gray-dark);
-        max-width: 40%;
+        max-width: 70%;
     }
     .skills {
         width: 100%;
@@ -321,7 +322,7 @@ aside .download-cv a:hover i {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-top: 15px;
+        padding-top: 25px;
     }
     .skills .myskills div.column-1 {
         margin-bottom: 45px;
@@ -333,15 +334,11 @@ aside .download-cv a:hover i {
         font-size: 14px;
         border: 5px solid var(--yellow);
     }
-    .skills .myskills {
-        margin-top: 0;
-    }
     .skills .skills-learning {
         margin-top: 25px;
         padding-bottom: 25px;
-        padding-top: 45px;
     }
     .skills .skills-learning div {
-        margin-top: 0px;
+        margin-top: 25px;
     }
 }
