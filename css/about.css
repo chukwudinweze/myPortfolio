@@ -268,6 +268,7 @@ aside .download-cv a:hover i {
         margin-top: 100px;
         flex-direction: column;
         justify-content: center;
+        position: relative;
     }
     .about-developer {
         width: 100%;
