@@ -225,6 +225,9 @@ aside .download-cv a:hover i {
     html {
         overflow-x: hidden;
     }
+    body {
+        overscroll-behavior: contain;
+    }
     .hamburger {
         display: block;
         position: fixed;
