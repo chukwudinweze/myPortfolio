@@ -221,7 +221,7 @@ nav {
 
 /* mobile version starts here */
 
-@media only screen and (max-device-width: 940px) {
+@media only screen and (max-device-width: 740px) {
     html {
         overflow-x: hidden;
     }

@@ -183,7 +183,7 @@ button[type="submit"]:hover .fa-send-o {
     margin-left: 10px
 }
 
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 740px) {
     html {
         overflow-x: hidden;
     }
@@ -233,7 +233,6 @@ button[type="submit"]:hover .fa-send-o {
         flex-direction: column;
         width: 100%;
         padding: 5px 5px 40px;
-        border: 1px solid red;
     }
     .contact .contact-msg h4 {
         color: var(--white);
@@ -257,11 +256,48 @@ button[type="submit"]:hover .fa-send-o {
         font-size: 16px;
     }
     .call .fa-phone-square {
-        transform: scale(1.15);
-        margin-left: 5px;
+        transform: scale(1.12);
+        margin-left: 0px;
     }
     .social-media-link {
         justify-content: space-between;
         width: 70%;
+    }
+    form {
+        padding-left: 0;
+    }
+    .name-email-subject {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    input[type] {
+        width: 100%;
+        text-align: left;
+        border-radius: 100px;
+        padding: 15px 25px;
+    }
+    form p {
+        margin-bottom: 25px;
+    }
+    textarea {
+        width: 100%;
+        text-align: left;
+        border-radius: 40px;
+        padding: 15px 25px;
+        margin-bottom: 0px;
+    }
+    button[type="submit"] {
+        width: 180px;
+        margin-left: 10px;
+    }
+    button[type="submit"] a {
+        padding: 15px 0;
+        font-size: 14px;
+        transform: scale(1.2);
+        letter-spacing: o;
+    }
+    button[type="submit"] a:hover i {
+        opacity: 1.0;
+        margin-left: 10px;
     }
 }
