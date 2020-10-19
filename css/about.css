@@ -221,7 +221,7 @@ aside .download-cv a:hover i {
 
 /* mobile version */
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 940px) {
     html {
         overflow-x: hidden;
     }
