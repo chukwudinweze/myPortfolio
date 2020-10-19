@@ -267,3 +267,48 @@ img {
     text-decoration: underline;
     text-underline-position: under;
 }
+
+
+/* mobile version */
+
+@media only screen and (min-width: 940px) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        overscroll-behavior: contain;
+    }
+    .hamburger {
+        display: block;
+        position: fixed;
+        right: 15px;
+        top: 10px;
+        z-index: 120000;
+    }
+    .hamburger {
+        background-color: transparent !important;
+    }
+    .hamburger-box {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        width: 25px !important;
+    }
+    .portfolio-heading {
+        font-size: 25px;
+        transform: scale(1.1, 1);
+        text-align: left;
+        margin: 0px 0 0px 0px;
+        padding: 16px 0 10px 35px;
+        background-color: var(--gray-dark);
+        border-bottom: 1px solid var(--gray);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 90000;
+    }
+}
