@@ -183,7 +183,7 @@ button[type="submit"]:hover .fa-send-o {
     margin-left: 10px
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 640px) {
     html {
         overflow-x: hidden;
     }
