@@ -3,7 +3,7 @@
     --yellow: #ffc107;
     --white: #fff;
     --gray: #6c757d;
-    --gray-dark: #343a40;
+    --gray-dark: #252525;
     --info: #17a2b8;
     --light: #f8f9fa;
     --light-gray: #aaa9a9;
@@ -181,4 +181,87 @@ button[type="submit"] {
 button[type="submit"]:hover .fa-send-o {
     opacity: 1;
     margin-left: 10px
+}
+
+@media only screen and (max-width: 940px) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        overscroll-behavior: contain;
+    }
+    .hamburger {
+        display: block;
+        position: fixed;
+        right: 15px;
+        top: 10px;
+        z-index: 120000;
+    }
+    .hamburger {
+        background-color: transparent !important;
+    }
+    .hamburger-box {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        width: 25px !important;
+    }
+    header#about-header .about-header {
+        font-size: 25px;
+        transform: scale(1.1, 1);
+        text-align: left;
+        margin: 0px 0 0px 0px;
+        padding: 16px 0 10px 35px;
+        background-color: var(--gray-dark);
+        border-bottom: 1px solid var(--gray);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 90000;
+    }
+    .contact {
+        flex-direction: column;
+        justify-content: center;
+        padding: 100px 20px;
+    }
+    .contact .contact-msg {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 5px 5px 40px;
+        border: 1px solid red;
+    }
+    .contact .contact-msg h4 {
+        color: var(--white);
+        font-family: var(--poppins);
+        font-size: 25px;
+        transform: scale(1, 1.2);
+        margin-bottom: 20px;
+    }
+    .contact .contact-msg p {
+        color: var(--white);
+        font-family: var(--open-sans);
+        font-size: 14px;
+    }
+    .contact .contact-msg h4 {
+        color: var(--white);
+        font-family: var(--open-sans);
+        font-size: 20px;
+        transform: scale(1);
+    }
+    .contact .contact-msg p {
+        font-size: 16px;
+    }
+    .call .fa-phone-square {
+        transform: scale(1.15);
+        margin-left: 5px;
+    }
+    .social-media-link {
+        justify-content: space-between;
+        width: 70%;
+    }
 }
