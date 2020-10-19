@@ -221,7 +221,7 @@ nav {
 
 /* mobile version starts here */
 
-@media only screen and (max-width: 940px) {
+@media only screen and (max-device-width: 940px) {
     html {
         overflow-x: hidden;
     }
@@ -244,7 +244,7 @@ nav {
         height: 100vh;
         position: fixed;
         top: 0;
-        left: -500px;
+        left: -1000px;
         margin-top: 0px;
         background-color: var(--gray-dark);
         transition: all .5s ease-in-out;
