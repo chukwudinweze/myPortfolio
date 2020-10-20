@@ -179,11 +179,6 @@ img {
     padding-bottom: 14px;
 }
 
-.description-header-white {
-    color: var(--white);
-    font-size: 14px;
-}
-
 .lightbox .close {
     background-color: lightgray;
     cursor: pointer;
@@ -360,5 +355,10 @@ img {
     }
     .lightbox .lb-caption {
         padding: 5px;
+    }
+    .description-header-white {
+        color: var(--white);
+        font-size: 12px;
+        line-height: 5px;
     }
 }
