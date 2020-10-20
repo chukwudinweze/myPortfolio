@@ -181,6 +181,7 @@ img {
 
 .description-header-white {
     color: var(--white);
+    font-size: 14px;
 }
 
 .lightbox .close {
