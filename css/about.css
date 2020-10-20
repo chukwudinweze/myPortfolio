@@ -292,6 +292,10 @@ aside .download-cv a:hover i {
         letter-spacing: 1;
         border-radius: 25px;
     }
+    aside .download-cv a i {
+        opacity: 1.0;
+        margin-left: 10px;
+    }
     aside .download-cv a:hover i {
         opacity: 1.0;
         margin-left: 10px;

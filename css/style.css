@@ -343,6 +343,10 @@ nav {
         transform: scale(1.2);
         letter-spacing: o;
     }
+    button.about-me a i {
+        opacity: 1.0;
+        margin-left: 10px;
+    }
     button.about-me a:hover i {
         opacity: 1.0;
         margin-left: 10px;

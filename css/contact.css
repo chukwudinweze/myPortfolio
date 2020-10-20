@@ -296,8 +296,12 @@ button[type="submit"]:hover .fa-send-o {
         transform: scale(1.2);
         letter-spacing: o;
     }
-    button[type="submit"] a:hover i {
-        opacity: 1.0;
+    .fa-send-o {
         margin-left: 10px;
+        opacity: 1.0;
+    }
+    button[type="submit"]:hover .fa-send-o {
+        opacity: 1.0;
+        margin-left: 10px
     }
 }
