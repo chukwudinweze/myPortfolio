@@ -179,6 +179,10 @@ img {
     padding-bottom: 14px;
 }
 
+.description-header-white {
+    color: var(--white);
+}
+
 .lightbox .close {
     background-color: lightgray;
     cursor: pointer;
