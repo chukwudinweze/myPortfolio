@@ -1,7 +1,8 @@
 # myPortfolio
 my personal portfolio as a web developer
 
-I am excited because i just finished learning git/github and here i am, creating my first repository.
-This is my personal portfolio where I can be contacted. 
+This was created with HTML, CSS, JAVASCRIPT.
 
-Here we go!!!
+Fade down amimation was created through a simple and easy jquery plugin for CSS animated page transition check link here http://git.blivesta.com/animsition
+
+
